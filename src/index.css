@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Sathoshi", "sans-sherif";
+
+  --color-background: #212529;
+  --color-beige: #edede9;
+  --color-blue: #457b9d;
+  --color-main: #2c1810;
+  --color-trackly: #8baedb;
+  --color-gt: #003057;
+}
