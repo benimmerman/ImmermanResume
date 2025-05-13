@@ -4,15 +4,15 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "start": "react-scripts start",
-    "build": "vite build"
-  },
+"scripts": {
+  "dev": "vite",
+  "lint": "eslint .",
+  "preview": "vite preview",
+  "predeploy": "npm run build",
+  "deploy": "vite build && echo 'www.benimmerman.com' > dist/CNAME && gh-pages -d dist",
+  "build": "vite build"
+},
+
   "dependencies": {
     "@ant-design/icons": "^6.0.0",
     "@heroicons/react": "^2.2.0",
