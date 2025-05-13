@@ -17,17 +17,11 @@ export interface EducationCardProps {
   isLast?: boolean;
 }
 
-export const EducationCard: FC<EducationCardProps> = ({
-  education,
-}) => {
+export const EducationCard: FC<EducationCardProps> = ({ education }) => {
   return (
-    <div className="py-4 px-4 text-white">
-      <div className="font-semibold text-lg">
-        {education.name}
-      </div>
-      <div className="text-sm mt-1">
-        {education.degree}
-      </div>
+    <div className="py-4 px-4">
+      <div className="font-semibold text-lg">{education.name}</div>
+      <div className="text-sm mt-1">{education.degree}</div>
     </div>
   );
 };

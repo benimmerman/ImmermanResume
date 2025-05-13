@@ -24,7 +24,7 @@ export const ExperienceCard: FC<ExperienceCardProps> = ({ experience }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className="bg-white/50 rounded-xl shadow-lg p-4 sm:p-6 mx-auto w-full mb-8 transition-all duration-300 transform hover:shadow-2xl hover:scale-[1.025]">
+    <div className="bg-gray-600 rounded-xl shadow-lg p-4 sm:p-6 mx-auto w-full mb-8 transition-all duration-300 transform hover:shadow-2xl hover:scale-[1.025]">
       {/* Summary View */}
       <div
         className={`flex flex-col gap-3 transition-all duration-300 ${
@@ -32,10 +32,10 @@ export const ExperienceCard: FC<ExperienceCardProps> = ({ experience }) => {
         }`}
       >
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
-          <span className="font-semibold text-xl text-main">
+          <span className="font-semibold text-x">
             {experience.role}
           </span>
-          <span className="text-sm text-gray-500">
+          <span className="text-sm text-gray-400">
             {experience.location} &middot; {experience.time}
           </span>
         </div>
@@ -62,12 +62,12 @@ export const ExperienceCard: FC<ExperienceCardProps> = ({ experience }) => {
         >
           <div className="overflow-hidden">
             <div className="pt-4 border-t border-gray-200">
-              <ul className="list-disc text-sm pl-4 space-y-2 text-main">
+              <ul className="list-disc text-sm pl-4 space-y-2">
                 {experience.bullets.map((bullet, idx) => (
                   <li key={idx}>
                     {bullet.text}
                     {bullet.subBullets && (
-                      <ul className="list-disc pl-6 space-y-1 text-sm text-main mt-2">
+                      <ul className="list-disc pl-6 space-y-1 text-sm mt-2">
                         {bullet.subBullets.map((sub, subIdx) => (
                           <li key={subIdx}>{sub}</li>
                         ))}
@@ -86,7 +86,7 @@ export const ExperienceCard: FC<ExperienceCardProps> = ({ experience }) => {
             {experience.skills.map((item, idx) => (
               <span
                 key={idx}
-                className={`bg-blue hover:bg-blue/80 text-white px-4 rounded-full font-semibold transition-all duration-300 ${
+                className={`bg-blue hover:bg-blue/80 px-4 rounded-full font-semibold transition-all duration-300 ${
                   isExpanded ? "py-1 text-xs" : "py-1.5 text-sm"
                 }`}
               >
@@ -99,7 +99,7 @@ export const ExperienceCard: FC<ExperienceCardProps> = ({ experience }) => {
           <div className="flex">
             <button
               onClick={() => setIsExpanded(!isExpanded)}
-              className="flex items-center gap-2 hover:cursor-pointer text-blue hover:text-blue/80 font-semibold text-sm self-end -mt-1"
+              className="flex items-center gap-2 hover:cursor-pointer text-white/80 hover:text-white/70 font-semibold text-sm self-end -mt-1"
             >
               {isExpanded ? (
                 <>

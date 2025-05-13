@@ -58,7 +58,7 @@ const FrontPage: FC = () => {
     <div className="flex flex-col bg-beige sm:flex-row min-h-screen overflow-auto">
       {/* Left 1/3: Profile (static on desktop) */}
       <div
-        className="w-full sm:w-1/3 bg-background text-white flex flex-col justify-between items-center pt-24 pb-8 min-h-[100dvh]
+        className="w-full sm:w-1/3 bg-gray-800 text-white flex flex-col justify-between items-center pt-24 pb-8 min-h-[100dvh]
                     sm:fixed sm:top-0 sm:left-0 sm:h-[100dvh]"
       >
         {/* Main profile content */}
@@ -123,10 +123,10 @@ const FrontPage: FC = () => {
                    snap-y snap-mandatory sm:snap-none sm:ml-[33.333333%]"
       >
         {/* about */}
-        <div className="min-h-screen sm:min-h-auto bg-gray-800 h-auto text-gray-300 ">
+        <div className="min-h-screen sm:min-h-auto bg-gray-800 sm:bg-gray-800/95 h-auto text-white ">
           <div className="w-full flex items-start justify-center snap-start">
             <div className="px-4 sm:px-8 sm:pb-8 sm:py-8 w-full">
-              <div className="sm:sticky sm:top-0 py-2 bg-gray-800/90">
+              <div className="sm:sticky sm:top-0 py-2 ">
                 <h2 className="text-2xl font-bold">{sections[0]}</h2>
               </div>
               <p className="mb-3">
@@ -134,12 +134,9 @@ const FrontPage: FC = () => {
                 a passion for building responsive and user friendly web
                 applications and cloud-based solutions. With a solid foundation
                 in engineering principles, I bring a systems-thinking mindset
-                and a sharp problem-solving approach to every project I work on.
-                My experience spans full-stack web development, data pipelines,
-                and automation—delivered through modern tools like Django,
-                React, AWS, and PostgreSQL. I'm a quick learner who thrives on
-                picking up new skills and technologies, and I enjoy tackling
-                fresh challenges that push me to grow.
+                and a sharp problem-solving approach to every project.
+                I'm a quick learner who thrives on
+                tackling fresh challenges that push me to grow.
               </p>
               <p className="mb-3">
                 I've developed a strong ability to translate complex
@@ -149,7 +146,7 @@ const FrontPage: FC = () => {
                 stakeholder training.
               </p>
               <p className="mb-3">
-                In my spare time, I enjoy reading, drawing, hanging with
+                In my spare time I enjoy reading, drawing, hanging with
                 friends, cheering on Georgia Tech athletics, and the occasional
                 Central Park picnic on a sunny day.
               </p>
@@ -158,10 +155,10 @@ const FrontPage: FC = () => {
         </div>
 
         {/* experience */}
-        <div className="min-h-screen sm:min-h-auto bg-beige h-auto text-main mt-8 pb-4">
+        <div className="min-h-screen sm:min-h-auto bg-gray-800 sm:bg-gray-800/95 h-auto text-white pt-8 pb-4">
           <div className="w-full flex items-start justify-center snap-start">
             <div className="px-4 sm:px-8 w-full">
-              <div className="sm:sticky sm:top-0 py-2 bg-beige/90">
+              <div className="sm:sticky sm:top-0 py-2 ">
                 <h2 className="text-2xl font-bold">{sections[1]}</h2>
               </div>
               {professionalExperience.map((exp, idx) => (
@@ -172,11 +169,11 @@ const FrontPage: FC = () => {
         </div>
 
         {/* projects */}
-        <div className="min-h-screen sm:min-h-auto bg-gray-800 h-auto text-main pt-8">
+        <div className="min-h-screen sm:min-h-auto bg-gray-800 sm:bg-gray-800/95 h-auto text-white">
           <div className="w-full flex items-start justify-center snap-start">
             <div className="px-4 sm:px-8 w-full">
-              <div className="sm:sticky sm:top-0 py-2 bg-gray-800/90">
-                <h2 className="text-2xl font-bold text-white">{sections[2]}</h2>
+              <div className="sm:sticky sm:top-0 py-2">
+                <h2 className="text-2xl font-bold">{sections[2]}</h2>
               </div>
               {projects.map((project, idx) => (
                 <ProjectsCard key={idx} project={project} />
@@ -186,11 +183,11 @@ const FrontPage: FC = () => {
         </div>
 
         {/* education and certifications*/}
-        <div className="min-h-screen sm:min-h-auto bg-background h-auto text-main pt-8 pb-24">
+        <div className="min-h-screen sm:min-h-auto bg-gray-800 sm:bg-gray-800/95 h-auto text-white pt-8 pb-24">
           <div className="w-full flex items-start justify-center snap-start">
             <div className="px-4 sm:px-8 w-full">
-              <div className="sm:sticky sm:top-0 py-2 bg-background/90">
-                <h2 className="text-2xl font-bold text-white">{sections[3]}</h2>
+              <div className="py-2">
+                <h2 className="text-2xl font-bold">{sections[3]}</h2>
               </div>
               {education.map((edu, idx) => (
                 <EducationCard key={idx} education={edu} />
