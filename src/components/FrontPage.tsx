@@ -10,7 +10,7 @@ import {
   FaMapMarkerAlt,
 } from "react-icons/fa";
 import { ExperienceCard } from "./ExperienceCard";
-import { professionalExperience } from "./ProfessionalExperience";
+import { professionalExperience } from "./Experience";
 import { ProjectsCard } from "./ProjectsCard";
 import { projects } from "./Projects";
 import { EducationCard } from "./EducationCard";
@@ -46,29 +46,37 @@ const contactInfo = [
   { type: "location", value: "New York, NY", icon: <FaMapMarkerAlt /> },
 ];
 
-const sections = ["About", "Experience", "Projects", "Education & Certifications"];
+const sections = [
+  "About",
+  "Experience",
+  "Projects",
+  "Education & Certifications",
+];
 
 const FrontPage: FC = () => {
   return (
     <div className="flex flex-col bg-beige sm:flex-row min-h-screen overflow-auto">
       {/* Left 1/3: Profile (static on desktop) */}
       <div
-        className="w-full sm:w-1/3 bg-background text-white flex flex-col justify-between items-center pt-24 pb-8 min-h-screen
-                    sm:fixed sm:top-0 sm:left-0 sm:h-screen"
+        className="w-full sm:w-1/3 bg-background text-white flex flex-col justify-between items-center pt-24 pb-8 min-h-[100dvh]
+                    sm:fixed sm:top-0 sm:left-0 sm:h-[100dvh]"
       >
         {/* Main profile content */}
         <div className="flex flex-col items-center gap-4 w-full max-w-[400px] mx-auto">
           <div className="flex items-center justify-center w-full">
             <img
               src={ProfilePic}
-              className="w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] rounded-full object-cover shadow-md"
+              className="w-[175px] h-[175px] sm:w-[225px] sm:h-[225px] rounded-full object-cover shadow-md"
               alt="Benjamin Immerman"
             />
           </div>
-          <h1 className="mt-4 sm:mt-8 text-2xl sm:text-4xl font-bold text-center">
+          <h1 className="mt-6 sm:mt-8 text-2xl sm:text-4xl font-bold text-center">
             Benjamin Immerman
           </h1>
-          <div className="mt-2 sm:mt-4 flex flex-col gap-2 w-full items-center">
+          <div className="mt-2 sm:mt-2 text-xl sm:text-2xl font-semibold text-center">
+            Software Engineer
+          </div>
+          <div className="mt-6 sm:mt-6 flex flex-col gap-2 w-full items-center">
             {personalLinks.map((link) => (
               <a
                 key={link.name}
@@ -115,10 +123,10 @@ const FrontPage: FC = () => {
                    snap-y snap-mandatory sm:snap-none sm:ml-[33.333333%]"
       >
         {/* about */}
-        <div className="min-h-screen sm:min-h-auto bg-beige h-auto text-main ">
+        <div className="min-h-screen sm:min-h-auto bg-gray-800 h-auto text-gray-300 ">
           <div className="w-full flex items-start justify-center snap-start">
-            <div className="px-4 sm:px-8  w-full">
-              <div className="sm:sticky sm:top-0 py-2 bg-beige/90">
+            <div className="px-4 sm:px-8 sm:pb-8 sm:py-8 w-full">
+              <div className="sm:sticky sm:top-0 py-2 bg-gray-800/90">
                 <h2 className="text-2xl font-bold">{sections[0]}</h2>
               </div>
               <p className="mb-3">
@@ -178,10 +186,10 @@ const FrontPage: FC = () => {
         </div>
 
         {/* education and certifications*/}
-        <div className="min-h-screen sm:min-h-auto bg-gray-800 h-auto text-main pt-8">
+        <div className="min-h-screen sm:min-h-auto bg-background h-auto text-main pt-8 pb-24">
           <div className="w-full flex items-start justify-center snap-start">
             <div className="px-4 sm:px-8 w-full">
-              <div className="sm:sticky sm:top-0 py-2 bg-gray-800/90">
+              <div className="sm:sticky sm:top-0 py-2 bg-background/90">
                 <h2 className="text-2xl font-bold text-white">{sections[3]}</h2>
               </div>
               {education.map((edu, idx) => (

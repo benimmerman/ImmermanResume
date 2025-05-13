@@ -5,6 +5,7 @@ export const professionalExperience: ProfessionalExperience[] = [
     role: "SAIC – Software Engineer",
     location: "New York, NY",
     time: "March 2025 – Present",
+    summary: "Developed a RESTful API using Django REST Framework to automate the ingestion of scanned tax documents as part of IRS modernization efforts, reducing manual data entry and decreasing human effort by an estimated 70%.",
     bullets: [
       {
         text: "Contributed to development effort of a RESTful API using Django REST Framework to automate the ingestion of scanned tax documents as part of IRS modernization efforts, reducing manual data entry and decreasing human effort by an estimated 70%.",
@@ -22,6 +23,7 @@ export const professionalExperience: ProfessionalExperience[] = [
     role: "Guidehouse – Software Engineer",
     location: "New York, NY",
     time: "March 2024 – February 2025",
+    summary: "Designed and developed an end-to-end ETL pipeline for the Library of Congress to simplify and automate data ingestion of employee data from CSV files to a PostgreSQL database, utilising AWS cloud infrasturcture.",
     bullets: [
       {
         text: "Developed an end-to-end ETL pipeline for the Library of Congress to simplify and automate data ingestion of employee data from CSV files to a PostgreSQL database, utilising AWS cloud infrasturcture.",
@@ -58,6 +60,7 @@ export const professionalExperience: ProfessionalExperience[] = [
     role: "Ecosystem – Mechanical Designer",
     location: "New York, NY",
     time: "August 2020 – February 2024",
+    summary: "Designed and optimized energy systems for large-scale buildings and campuses, collaborating with engineers and architects to integrate solutions into complex project scopes.",
     bullets: [
       {
         text: "Designed and optimized energy systems for large-scale buildings and campuses, collaborating with engineers and architects to integrate solutions into complex project scopes.",
@@ -73,16 +76,17 @@ export const professionalExperience: ProfessionalExperience[] = [
       },
     ],
     skills: [
-      "Mathematical Modeling",
+      "System Design",
       "AutoCAD",
-      "Thermodynamics",
       "Documentation",
+      "Mathematical Modeling",
     ],
   },
   {
     role: "BE3 – Mechanical Engineering Associate",
     location: "Austin, TX",
     time: "September 2019 – August 2020",
+    summary: "Utilized AutoCAD and Revit to create accurate, data-driven 3D models of mechanical systems based on architectural and engineering requirements.",
     bullets: [
       {
         text: "Utilized AutoCAD and Revit to create accurate, data-driven 3D models of mechanical systems based on architectural and engineering requirements.",
@@ -94,6 +98,6 @@ export const professionalExperience: ProfessionalExperience[] = [
         text: "Conducted site visits and created redlines to resolve design discrepancies, strengthening diagnostic and iterative problem.",
       },
     ],
-    skills: ["Technical Communication", "AutoCAD", "System Optimization"],
+    skills: ["AutoCAD", "Technical Communication", "System Optimization"],
   },
 ];
