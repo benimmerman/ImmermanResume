@@ -134,9 +134,9 @@ const FrontPage: FC = () => {
                 a passion for building responsive and user friendly web
                 applications and cloud-based solutions. With a solid foundation
                 in engineering principles, I bring a systems-thinking mindset
-                and a sharp problem-solving approach to every project.
-                I'm a quick learner who thrives on
-                tackling fresh challenges that push me to grow.
+                and a sharp problem-solving approach to every project. I'm a
+                quick learner who thrives on tackling fresh challenges that push
+                me to grow.
               </p>
               <p className="mb-3">
                 I've developed a strong ability to translate complex
@@ -146,9 +146,9 @@ const FrontPage: FC = () => {
                 stakeholder training.
               </p>
               <p className="mb-3">
-                In my spare time I enjoy reading, drawing, hanging with
-                friends, cheering on Georgia Tech athletics, and the occasional
-                Central Park picnic on a sunny day.
+                In my spare time I enjoy reading, drawing, hanging with friends,
+                cheering on Georgia Tech athletics, and the occasional Central
+                Park picnic on a sunny day.
               </p>
             </div>
           </div>
@@ -175,9 +175,11 @@ const FrontPage: FC = () => {
               <div className="sm:sticky sm:top-0 py-2">
                 <h2 className="text-2xl font-bold">{sections[2]}</h2>
               </div>
-              {projects.map((project, idx) => (
-                <ProjectsCard key={idx} project={project} />
-              ))}
+              <div className="flex flex-wrap gap-8 justify-center mt-4">
+                {projects.map((project, idx) => (
+                  <ProjectsCard key={idx} project={project} />
+                ))}
+              </div>
             </div>
           </div>
         </div>

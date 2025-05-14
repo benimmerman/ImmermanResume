@@ -1,4 +1,6 @@
 import type { Projects } from "./ProjectsCard";
+import TracklyImage from "./TracklyImage.jpg";
+import ResumeProjectImage from "./ResumeProjectImage.jpg";
 
 export const projects: Projects[] = [
   {
@@ -41,5 +43,28 @@ export const projects: Projects[] = [
       "React",
       "Tailwind",
     ],
+    image: TracklyImage,
+  },
+  {
+    name: "ImmermanResume",
+    description:
+      "Web application built with TypeScript, React, and Tailwind CSS. This project is a personal website that showcases my projects, experience, and contact information.",
+    bullets: [
+      {
+        text: "Features include a responsive design, a clean and modern UI, and a smooth user experience.",
+      },
+    ],
+    links: [
+      {
+        link: "",
+        name: "ImmermanResume",
+      },
+      {
+        link: "https://github.com/benimmerman/ImmermanResume",
+        name: "Frontend",
+      },
+    ],
+    skills: ["TypeScript", "React", "Tailwind", "Vite", "UI Design"],
+    image: ResumeProjectImage,
   },
 ];
