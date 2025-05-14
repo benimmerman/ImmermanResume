@@ -1,6 +1,6 @@
 import type { FC } from "react";
-import ProfilePic from "./ProfilePic.jpg";
-import ImmermanResumePDF from "./ImmermanResume.pdf";
+import ProfilePic from "../../public/ProfilePic.jpg";
+import ImmermanResumePDF from "../../public/ImmermanResume.pdf";
 import {
   FaLinkedinIn,
   FaGithub,

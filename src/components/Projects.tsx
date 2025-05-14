@@ -1,6 +1,6 @@
 import type { Projects } from "./ProjectsCard";
-import TracklyImage from "./TracklyImage.jpg";
-import ResumeProjectImage from "./ResumeProjectImage.jpg";
+import TracklyImage from "../../public/TracklyImage.jpg";
+import ResumeProjectImage from "../../public/ResumeProjectImage.jpg";
 
 export const projects: Projects[] = [
   {
