@@ -12,7 +12,7 @@ export const useScrollSpy = (ids: string[], offset = 0) => {
           }
         });
       },
-      { rootMargin: `-${offset}px 0px -80% 0px`, threshold: 0.1 }
+      { rootMargin: `-${offset}px 0px -100px 0px`, threshold: 0.1 }
     );
 
     ids.forEach((id) => {

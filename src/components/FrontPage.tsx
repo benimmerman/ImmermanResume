@@ -56,7 +56,7 @@ const sections = [
 
 const FrontPage: FC = () => {
   return (
-    <div className="flex flex-col bg-beige sm:flex-row min-h-screen overflow-y-scroll scroll-smooth sm:overflow-y-auto">
+    <div className="flex flex-col sm:flex-row min-h-screen overflow-y-scroll scroll-smooth sm:overflow-y-auto">
       {/* Left 1/3: Profile (static on desktop) */}
       <section
         id="profile"
@@ -121,14 +121,16 @@ const FrontPage: FC = () => {
 
       {/* Right 2/3: Content */}
       <div
-        className="flex flex-col w-full min-h-screen sm:overflow-y-auto
-                   snap-y snap-mandatory sm:snap-none sm:ml-[33.333333%]"
+        className="flex flex-col w-full sm:overflow-y-auto sm:ml-[33.333333%]"
       >
         {/* about */}
-        <div className="min-h-screen sm:min-h-auto bg-gray-800 sm:bg-gray-800/95 h-auto text-white ">
-          <div className="w-full flex items-start justify-center snap-start">
+        <section
+          id="about"
+          className="min-h-screen sm:min-h-auto bg-gray-800 sm:bg-gray-800/95 h-auto text-white "
+        >
+          <div className="w-full flex items-start justify-center ">
             <div className="px-4 sm:px-8 sm:pb-8 sm:py-8 w-full">
-              <div className="sm:sticky sm:top-0 py-2 ">
+              <div className="sm:top-0 py-2 ">
                 <h2 className="text-2xl font-bold px-2 sm:px-0">
                   {sections[0]}
                 </h2>
@@ -153,16 +155,16 @@ const FrontPage: FC = () => {
               </p>
             </div>
           </div>
-        </div>
+        </section>
 
         {/* experience */}
         <section
           id="experience"
-          className="min-h-screen sm:min-h-auto bg-gray-800 sm:bg-gray-800/95 h-auto text-white pb-4"
+          className="bg-gray-800 sm:bg-gray-800/95 text-white pb-4"
         >
-          <div className="w-full flex items-start justify-center snap-start">
+          <div className="w-full flex items-start justify-center ">
             <div className="px-4 sm:px-8 w-full">
-              <div className="sm:sticky sm:top-0 py-2 ">
+              <div className="sm:top-0 py-2 ">
                 <h2 className="text-2xl font-bold px-2 sm:px-0">
                   {sections[1]}
                 </h2>
@@ -177,11 +179,11 @@ const FrontPage: FC = () => {
         {/* projects */}
         <section
           id="projects"
-          className="min-h-screen sm:min-h-auto bg-gray-800 sm:bg-gray-800/95 h-auto text-white"
+          className="min-h-screen sm:min-h-auto bg-gray-800 sm:bg-gray-800/95 text-white pb-4"
         >
-          <div className="w-full flex items-start justify-center snap-start">
+          <div className="w-full flex items-start justify-center ">
             <div className="px-4 sm:px-8 w-full">
-              <div className="sm:sticky sm:top-0 py-2">
+              <div className="sm:top-0 py-2">
                 <h2 className="text-2xl font-bold px-2 sm:px-0">
                   {sections[2]}
                 </h2>
@@ -198,9 +200,9 @@ const FrontPage: FC = () => {
         {/* education and certifications*/}
         <section
           id="education"
-          className="min-h-screen sm:min-h-auto bg-gray-800 sm:bg-gray-800/95 h-auto text-white pt-8 pb-24"
+          className="min-h-screen sm:min-h-auto bg-gray-800 sm:bg-gray-800/95 text-white pt-8 pb-24"
         >
-          <div className="w-full flex items-start justify-center snap-start">
+          <div className="w-full flex items-start justify-center ">
             <div className="px-4 sm:px-8 w-full">
               <div className="py-2">
                 <h2 className="text-2xl font-bold px-2 sm:px-0">

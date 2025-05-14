@@ -44,7 +44,7 @@ const menuItems = [
 const sectionIds = menuItems.map((item) => item.href.replace("#", ""));
 
 export const MenuBanner: FC = () => {
-  const activeSection = useScrollSpy(sectionIds, 10);
+  const activeSection = useScrollSpy(sectionIds, 0);
 
   return (
     <>
@@ -52,6 +52,8 @@ export const MenuBanner: FC = () => {
         <div className="flex justify-center">
           {menuItems.map((item) => {
             const isActive = item.href.replace("#", "") === activeSection;
+            console.log(["activeSection", activeSection]);
+            console.log(["item href", item.href.replace("#", "")]);
             return (
               <div className="flex-1 group">
                 <a
