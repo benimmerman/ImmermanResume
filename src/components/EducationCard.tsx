@@ -8,8 +8,6 @@ export interface EducationLink {
 export interface Education {
   name: string;
   degree: string;
-  links: EducationLink[];
-  skills: string[];
 }
 
 export interface EducationCardProps {

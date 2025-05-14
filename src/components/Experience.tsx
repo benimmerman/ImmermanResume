@@ -5,7 +5,8 @@ export const professionalExperience: ProfessionalExperience[] = [
     role: "SAIC – Software Engineer",
     location: "New York, NY",
     time: "March 2025 – Present",
-    summary: "Developed a RESTful API using Django REST Framework to automate the ingestion of scanned tax documents as part of IRS modernization efforts, reducing manual data entry and decreasing human effort by an estimated 70%.",
+    summary:
+      "Built a Django REST Framework API to automate ingestion and processing of scanned tax documents for IRS modernization, reducing manual input by 70% and accelerating development by 30% through Agile collaboration and efficient backend delivery.",
     bullets: [
       {
         text: "Contributed to development effort of a RESTful API using Django REST Framework to automate the ingestion of scanned tax documents as part of IRS modernization efforts, reducing manual data entry and decreasing human effort by an estimated 70%.",
@@ -23,7 +24,8 @@ export const professionalExperience: ProfessionalExperience[] = [
     role: "Guidehouse – Software Engineer",
     location: "New York, NY",
     time: "March 2024 – February 2025",
-    summary: "Designed and developed an end-to-end ETL pipeline for the Library of Congress to simplify and automate data ingestion of employee data from CSV files to a PostgreSQL database, utilising AWS cloud infrasturcture.",
+    summary:
+      "Developed a scalable AWS ETL pipeline for the Library of Congress to automate employee data ingestion, cutting manual effort by 0.5 FTE. Developed reusable Python modules, enforced secure data practices, and ensured seamless handoff through cross-functional collaboration. Created a responsive front-end application with React for the National Institutes of Health (NIH) used for new employee onboarding.",
     bullets: [
       {
         text: "Developed an end-to-end ETL pipeline for the Library of Congress to simplify and automate data ingestion of employee data from CSV files to a PostgreSQL database, utilising AWS cloud infrasturcture.",
@@ -60,7 +62,8 @@ export const professionalExperience: ProfessionalExperience[] = [
     role: "Ecosystem – Mechanical Designer",
     location: "New York, NY",
     time: "August 2020 – February 2024",
-    summary: "Designed and optimized energy systems for large-scale buildings and campuses, collaborating with engineers and architects to integrate solutions into complex project scopes.",
+    summary:
+      "Engineered data-driven energy systems for large-scale projects, applying modeling and optimization to reduce energy use by 25%. Developed reusable design tools and collaborated cross-functionally.",
     bullets: [
       {
         text: "Designed and optimized energy systems for large-scale buildings and campuses, collaborating with engineers and architects to integrate solutions into complex project scopes.",
@@ -76,9 +79,9 @@ export const professionalExperience: ProfessionalExperience[] = [
       },
     ],
     skills: [
-      "System Design",
       "AutoCAD",
       "Documentation",
+      "Mechanical System Design",
       "Mathematical Modeling",
     ],
   },
@@ -86,10 +89,11 @@ export const professionalExperience: ProfessionalExperience[] = [
     role: "BE3 – Mechanical Engineering Associate",
     location: "Austin, TX",
     time: "September 2019 – August 2020",
-    summary: "Utilized AutoCAD and Revit to create accurate, data-driven 3D models of mechanical systems based on architectural and engineering requirements.",
+    summary:
+      "Created data-driven system models using AutoCAD and Revit, streamlining design workflows and supporting performance analysis. Applied iterative problem-solving and diagnostic skills to resolve complex system issues",
     bullets: [
       {
-        text: "Utilized AutoCAD and Revit to create accurate, data-driven 3D models of mechanical systems based on architectural and engineering requirements.",
+        text: "Utilized AutoCAD and Revit to create accurate, data-driven models of mechanical systems based on architectural and engineering requirements.",
       },
       {
         text: "Contributed to building performance analysis using engineering software, streamlining calculation workflows.",

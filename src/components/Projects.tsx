@@ -41,6 +41,7 @@ export const projects: Projects[] = [
       "RESTful API",
       "JavaScript",
       "React",
+      "Redux",
       "Tailwind",
     ],
     image: TracklyImage,
