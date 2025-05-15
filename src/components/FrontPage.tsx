@@ -120,9 +120,7 @@ const FrontPage: FC = () => {
       </section>
 
       {/* Right 2/3: Content */}
-      <div
-        className="flex flex-col w-full sm:overflow-y-auto sm:ml-[33.333333%]"
-      >
+      <div className="flex flex-col w-full sm:overflow-y-auto sm:ml-[33.333333%]">
         {/* about */}
         <section
           id="about"
@@ -179,7 +177,7 @@ const FrontPage: FC = () => {
         {/* projects */}
         <section
           id="projects"
-          className="min-h-screen sm:min-h-auto bg-gray-800 sm:bg-gray-800/95 text-white pb-4"
+          className="min-h-screen sm:min-h-auto  bg-gray-800 sm:bg-gray-800/95 text-white pb-4"
         >
           <div className="w-full flex items-start justify-center ">
             <div className="px-4 sm:px-8 w-full">
@@ -188,7 +186,7 @@ const FrontPage: FC = () => {
                   {sections[2]}
                 </h2>
               </div>
-              <div className="flex flex-wrap gap-8 justify-center mt-4">
+              <div className="flex flex-wrap gap-16 justify-center mt-4">
                 {projects.map((project, idx) => (
                   <ProjectsCard key={idx} project={project} />
                 ))}

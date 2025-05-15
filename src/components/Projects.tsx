@@ -5,20 +5,24 @@ import ResumeProjectImage from "../../public/ResumeProjectImage.jpg";
 export const projects: Projects[] = [
   {
     name: "Trackly",
-    description:
-      "Progressive Web Application (PWA) hosted on Render. Responsive web app that allows users to create, manage, and update task lists.",
     bullets: [
       {
-        text: " Backend API developed using Django REST Framework, supporting full CRUD operations (GET, POST, PUT, and DELETE) and leveraging a PostgreSQL database. Created API documentation using Swagger OpenAPI.",
+        text: "Progressive Web Application (PWA) hosted on Render that enables users to create, manage, and persist custom checklists across sessions.",
       },
       {
-        text: "UI developed using JavaScript, React, Vite and Tailwind CSS with state management handled with Redux.",
+        text: "Backend powered by Django REST Framework with JWT authentication.",
       },
       {
-        text: "Implemented user authentication, account creation, and session management with JWT tokens.",
+        text: "Data stored in a PostgreSQL database with secure password encryption.",
       },
       {
-        text: "Features include creating new/deleting existing lists, adding/modifying/deleting list items, and toggling completion status. ",
+        text: "Frontend developed using React, Redux, and Vite for performance and responsiveness.",
+      },
+      {
+        text: "RESTful communication handled via Axios.",
+      },
+      {
+        text: "Designed for future feature expansion, including shared list collaboration and expense tracking between users.",
       },
     ],
     links: [
@@ -47,18 +51,34 @@ export const projects: Projects[] = [
     image: TracklyImage,
   },
   {
-    name: "ImmermanResume",
-    description:
-      "Web application built with TypeScript, React, and Tailwind CSS. This project is a personal website that showcases my projects, experience, and contact information.",
+    name: "Personal Website",
     bullets: [
       {
-        text: "Features include a responsive design, a clean and modern UI, and a smooth user experience.",
+        text: "Responsive personal portfolio site with mobile-first design.",
+      },
+      {
+        text: "Built with React, Vite, and TypeScript.",
+      },
+      {
+        text: "Deployed via GitHub Pages for ease of access and maintenance.",
+      },
+      {
+        text: "Showcases profile overview with resume and external links.",
+      },
+      {
+        text: "Expandable professional experience cards with skill tags.",
+      },
+      {
+        text: "Interactive project gallery with image previews and tech stacks.",
+      },
+      {
+        text: "Education and certifications with relevant credentials.",
       },
     ],
     links: [
       {
         link: "",
-        name: "ImmermanResume",
+        name: "Personal Website",
       },
       {
         link: "https://github.com/benimmerman/ImmermanResume",
