@@ -27,7 +27,7 @@ export const ProjectsCard: FC<ProjectsCardProps> = ({ project }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className="flex flex-col justify-between bg-gray-600 rounded-xl shadow-lg p-4 sm:p-4 w-full sm:w-[70%] md:w-[40%] mb-4 min-h-[400px] transition-all duration-300 transform hover:shadow-2xl hover:scale-[1.025]">
+    <div className="flex flex-col justify-between bg-gray-600 rounded-xl shadow-lg p-4 sm:p-4 w-full sm:w-[70%] md:w-[40%] mb-4 min-h-[400px] transition-all duration-300 transform">
       {/* top section*/}
       <div className="flex flex-col justify-start">
         {/* Project Name */}
@@ -82,7 +82,7 @@ export const ProjectsCard: FC<ProjectsCardProps> = ({ project }) => {
 
         {/* App Image - Compact View */}
         <div
-          className={`grid transition-all duration-300 ease-in-out ${
+          className={`grid transition-all duration-300 ease-in-out hover:scale-[1.025] hover:cursor-pointer ${
             !isExpanded
               ? "grid-rows-[1fr] opacity-100"
               : "grid-rows-[0fr] opacity-0"

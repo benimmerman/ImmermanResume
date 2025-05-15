@@ -24,7 +24,10 @@ export const ExperienceCard: FC<ExperienceCardProps> = ({ experience }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className="bg-gray-600 rounded-xl shadow-lg p-4 sm:p-6 mx-auto w-full mb-8 transition-all duration-300 transform hover:shadow-2xl hover:scale-[1.025]">
+    <div
+      onClick={() => setIsExpanded(!isExpanded)}
+      className="bg-gray-600 rounded-xl shadow-lg p-4 sm:p-6 mx-auto w-full mb-8 transition-all duration-300 transform hover:cursor-pointer hover:shadow-2xl hover:scale-[1.025]"
+    >
       {/* Summary View */}
       <div
         className={`flex flex-col gap-3 transition-all duration-300 ${
@@ -32,9 +35,7 @@ export const ExperienceCard: FC<ExperienceCardProps> = ({ experience }) => {
         }`}
       >
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
-          <span className="font-semibold text-x">
-            {experience.role}
-          </span>
+          <span className="font-semibold text-x">{experience.role}</span>
           <span className="text-sm text-gray-400">
             {experience.location} &middot; {experience.time}
           </span>

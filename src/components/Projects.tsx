@@ -77,7 +77,7 @@ export const projects: Projects[] = [
     ],
     links: [
       {
-        link: "",
+        link: "https://www.benimmerman.com",
         name: "Personal Website",
       },
       {
