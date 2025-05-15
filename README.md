@@ -6,6 +6,16 @@ The website serves as a centralized platform to highlight professional experienc
 
 ---
 
+## 🛠️ Tech Stack
+
+- **Framework**: React (with Vite)
+- **Language**: TypeScript  
+- **Styling**: Tailwind CSS  
+- **Design**: Mobile-first with responsive layouts  
+- **UI Feature**: Bottom navigation bar on mobile for quick access to all sections with a modern, app-like design  
+- **Deployment**: GitHub Pages
+---
+
 ## 📁 Sections Overview
 
 ### 👤 Profile  
@@ -32,14 +42,3 @@ The website serves as a centralized platform to highlight professional experienc
 - B.S. Mechanical Engineering from Georgia Tech  
 - Data Engineering bootcamp credential from WeCloudData
 - AWS Certified Developer – Associate certification  
-
----
-
-## 🛠️ Tech Stack
-
-- **Framework**: React (with Vite)
-- **Language**: TypeScript  
-- **Styling**: Tailwind CSS  
-- **Design**: Mobile-first with responsive layouts  
-- **UI Feature**: Bottom navigation bar on mobile for quick access to all sections with a modern, app-like design  
-- **Deployment**: GitHub Pages
