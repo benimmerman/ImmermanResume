@@ -1,4 +1,4 @@
-# 🌐 Ben Immerman — Personal Website
+# 🌐 [Ben Immerman — Personal Website](https://www.benimmerman.com)
 
 This repository contains the source code for Ben Immerman's personal website. Built with a mobile-first approach, the site is fully responsive and adapts to various screen sizes.
 
