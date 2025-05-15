@@ -29,8 +29,8 @@ The website serves as a centralized platform to highlight professional experienc
   - GitHub repository links   
 
 ### 🎓 Education & Certifications  
-- Bachelor’s degree in Computer Science from Georgia Tech  
-- Full-stack development bootcamp credential  
+- B.S. Mechanical Engineering from Georgia Tech  
+- Data Engineering bootcamp credential from WeCloudData
 - AWS Certified Developer – Associate certification  
 
 ---
