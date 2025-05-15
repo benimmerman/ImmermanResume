@@ -1,54 +1,45 @@
-# React + TypeScript + Vite
+# 🌐 Ben Immerman — Personal Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the source code for Ben Immerman's personal website. Built with a mobile-first approach, the site is fully responsive and adapts to various screen sizes.
 
-Currently, two official plugins are available:
+The website serves as a centralized platform to highlight professional experience, technical skills, educational background, certifications, and projects. It is structured for intuitive navigation and quick access to relevant information.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📁 Sections Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 👤 Profile  
+- Displays a profile image, name, and professional title  
+- Includes links to LinkedIn, GitHub, and a downloadable resume  
+- Contains a brief "About" section  
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### 💼 Experience  
+- Features cards for each position held, including:
+  - Company name, job title, location, and dates  
+  - Summary of responsibilities and contributions  
+  - Skill tags highlighting relevant technologies  
+  - Expandable content for detailed descriptions  
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 💻 Projects  
+- Showcases personal and professional projects  
+- Project cards include:
+  - Clickable titles (when applicable) and preview images  
+  - Tags for technologies used  
+  - Expandable section for additional context  
+  - GitHub repository links   
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 🎓 Education & Certifications  
+- Bachelor’s degree in Computer Science from Georgia Tech  
+- Full-stack development bootcamp credential  
+- AWS Certified Developer – Associate certification  
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: React (with Vite)
+- **Language**: TypeScript  
+- **Styling**: Tailwind CSS  
+- **Design**: Mobile-first with responsive layouts  
+- **UI Feature**: Bottom navigation bar on mobile for quick access to all sections with a modern, app-like design  
+- **Deployment**: GitHub Pages
