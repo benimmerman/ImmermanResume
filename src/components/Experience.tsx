@@ -50,7 +50,7 @@ export const professionalExperience: ProfessionalExperience[] = [
         ],
       },
       {
-        text: "Built a responsive front-end application with React for the National Institutes of Health (NIH) used for new employeeonboarding.",
+        text: "Built a responsive front-end application with React for the National Institutes of Health (NIH) used for new employee onboarding.",
       },
       {
         text: "Led stakeholder meetings and provided hands-on training to ensure successful handoff of tools and solutions.",
