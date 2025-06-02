@@ -21,7 +21,7 @@ export const professionalExperience: ProfessionalExperience[] = [
     skills: ["Python", "Django", "Agile", "RESTful API", "GCP", "Swagger"],
   },
   {
-    role: "Guidehouse – Software Engineer",
+    role: "Guidehouse – Software Engineer (Data)",
     location: "New York, NY",
     time: "March 2024 – February 2025",
     summary:
